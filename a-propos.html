@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWiki | À propos</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo.png" alt="Logo EduWiki" class="logo-img">
+                EduWiki
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <h1 class="titre-section">À propos de nous</h1>
+        <p class="sous-titre">Découvrez l'équipe et la mission derrière le projet EduWiki.</p>
+        
+        <section class="about-section">
+            <div class="about-texte">
+                <h2>L'Agence WebNova</h2>
+                <p>WebNova est une agence digitale spécialisée dans la création de sites web éducatifs et informatifs. Notre objectif est de transformer des informations complexes en plateformes intuitives et accessibles à tous.</p>
+                
+                <h2>Le Projet EduWiki</h2>
+                <p>Ce Mini Wiki a été commandé par notre client <strong>EduWiki</strong>. Il a été entièrement conçu et développé par <strong>Rida Sabrar</strong>, développeur Frontend chez WebNova</p>
+                <p>La plateforme met en avant une navigation fluide, une lisibilité optimale du contenu et un design moderne structuré grâce aux technologies HTML5 et CSS3 (Flexbox & Grid).</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="img/a propos.jpg" alt="Équipe WebNova">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grille">
+            <div class="footer-col">
+                <h3>Informations du site</h3>
+                <p>EduWiki est un Mini Wiki éducatif développé par l'agence WebNova. Notre mission est de simplifier l'accès à l'information technologique.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="index.html">Page d'accueil</a></li>
+                    <li><a href="articles.html">Liste des articles</a></li>
+                    <li><a href="a-propos.html">À propos de WebNova</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Email : contact@webnova.ma</p>
+                <p>Téléphone : +212 5 00 00 00 00</p>
+                <p>Adresse : Agence WebNova, Maroc</p>
+            </div>
+        </div>
+    </footer>
+<style>
+.about-section {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background: var(--blanc);
+    padding: 50px;
+    border-radius: 16px;
+    border: 1px solid var(--bordure);
+    margin: 20px auto 50px;
+}
+
+.about-texte { flex: 1; }
+.about-texte h2 { color: var(--bleu-pro); margin-bottom: 20px; font-size: 2.2rem; }
+.about-texte p { color: var(--texte-para); margin-bottom: 20px; font-size: 1.1rem; }
+
+.about-image { flex: 1; }
+.about-image img { width: 100%; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+
+@media (max-width: 768px) {
+    .about-section { flex-direction: column; text-align: center; padding: 30px 20px; }
+}</style>
+</body>
+</html>
